@@ -1,4 +1,4 @@
-package com.example.baeza.materialcomponentstoy
+package com.example.baeza.materialcomponentstoy.view
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -6,6 +6,9 @@ import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.baeza.materialcomponentstoy.CircleTransformation
+import com.example.baeza.materialcomponentstoy.R
+import com.example.baeza.materialcomponentstoy.helper.NavigationHost
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.login_fragment.*
 import kotlinx.android.synthetic.main.login_fragment.view.*
@@ -22,6 +25,7 @@ class LoginFragment : Fragment() {
                 textInput_login_pass.error = getString(R.string.login_password_error)
             } else {
                 textInput_login_pass.error = null
+                (activity as NavigationHost).navigateTo(ProductGridFragment(), false)
             }
         }
 
