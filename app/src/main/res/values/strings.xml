@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MaterialComponentsToy</string>
+
+    <string name="login_usernamehint">Username</string>
+    <string name="login_userpasshint">Password</string>
+
+    <string name="all_buttonnext">Next</string>
+    <string name="all_buttoncancel">Cancel</string>
+
+    <string name="login_helpertext_username">email</string>
+    <string name="login_password_error">Password should have at least 8 symbols</string>
+
+    <string name="login_contentdescription_welcomephoto">Welcome Photo</string>
+</resources>
