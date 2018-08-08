@@ -20,38 +20,18 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.design.card.MaterialCardView
-        android:layout_width="160dp"
-        android:layout_height="180dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="70dp"
-        app:cardBackgroundColor="?attr/colorPrimaryDark"
-        app:cardCornerRadius="4dp">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/productGridBackgroundColor"
+        android:paddingEnd="@dimen/shr_product_grid_spacing"
+        android:paddingStart="@dimen/shr_product_grid_spacing"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <LinearLayout
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="#FFFFFF"
-            android:orientation="vertical"
-            android:padding="8dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="@string/card_product_title"
-                android:textAppearance="?attr/textAppearanceHeadline6" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="@string/card_product_description"
-                android:textAppearance="?attr/textAppearanceBody2" />
-        </LinearLayout>
-    </android.support.design.card.MaterialCardView>
-
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.NestedScrollView>
 </FrameLayout>
