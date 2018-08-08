@@ -11,4 +11,10 @@
     <string name="login_password_error">Password should have at least 8 symbols</string>
 
     <string name="login_contentdescription_welcomephoto">Welcome Photo</string>
+
+    <string name="toolbar_menu_filter">Filter</string>
+    <string name="toolbar_menu_search">Search</string>
+
+    <string name="card_product_title">Product Title</string>
+    <string name="card_product_description">Product Description</string>
 </resources>

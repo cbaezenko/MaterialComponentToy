@@ -3,4 +3,6 @@
     <color name="colorPrimary">#CDDC39</color>
     <color name="colorPrimaryDark">#AFB42B</color>
     <color name="colorAccent">#009688</color>
+
+    <color name="toolbarIconColor">#FFFFFF</color>
 </resources>
