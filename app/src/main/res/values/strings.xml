@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MaterialComponentsToy</string>
+    <string name="app_name">Shrine</string>
 
     <string name="login_usernamehint">Username</string>
     <string name="login_userpasshint">Password</string>

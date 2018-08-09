@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/loginPageBackgroundColor"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -31,13 +32,15 @@
             app:layout_constraintTop_toBottomOf="@+id/guideline2">
 
             <android.support.design.widget.TextInputEditText
+                android:inputType="text"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:maxLines="1"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/textInput_login_pass"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.Shrine.TextInputLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -52,10 +55,10 @@
 
             <android.support.design.widget.TextInputEditText
                 android:id="@+id/edit_text_login_userpass"
-                android:maxLength="8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:maxLength="8"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.constraint.Guideline
@@ -67,8 +70,8 @@
 
         <ImageView
             android:id="@+id/imageView_login_welcomephoto"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="164dp"
+            android:layout_height="164dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
@@ -85,7 +88,7 @@
 
         <android.support.design.button.MaterialButton
             android:id="@+id/button_login_cancel"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
+            style="@style/Widget.Shrine.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -94,6 +97,7 @@
             app:layout_constraintTop_toTopOf="@+id/button_login_next"/>
 
         <android.support.design.button.MaterialButton
+            style="@style/Widget.Shrine.Button"
             android:id="@+id/button_login_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,6 +108,20 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInput_login_pass"/>
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.Shrine.Title"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/app_name"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_login_welcomephoto"/>
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
