@@ -1,11 +1,13 @@
 package com.example.baeza.materialcomponentstoy.view
 
+import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import com.example.baeza.materialcomponentstoy.helper.CircleTransformation
 import com.example.baeza.materialcomponentstoy.R
 import com.example.baeza.materialcomponentstoy.helper.NavigationHost
@@ -26,6 +28,7 @@ class LoginFragment : Fragment() {
             } else {
                 textInput_login_pass.error = null
                 (activity as NavigationHost).navigateTo(ProductGridFragment(), false)
+                hideSoftKeyboard(view)
             }
         }
 
@@ -36,6 +39,11 @@ class LoginFragment : Fragment() {
             false
         }
         return view
+    }
+
+    private fun hideSoftKeyboard(view: View){
+        val imm = view.context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 
     private fun isPasswordValid(text: Editable?): Boolean { return text != null && text.length >= 8 }
