@@ -6,7 +6,7 @@ import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.baeza.materialcomponentstoy.CircleTransformation
+import com.example.baeza.materialcomponentstoy.helper.CircleTransformation
 import com.example.baeza.materialcomponentstoy.R
 import com.example.baeza.materialcomponentstoy.helper.NavigationHost
 import com.squareup.picasso.Picasso
@@ -30,12 +30,11 @@ class LoginFragment : Fragment() {
         }
 
         view.edit_text_login_userpass.setOnKeyListener { _, _, _ ->
-            if (isPasswordValid(edit_text_login_userpass.text!!)) {
+            if (isPasswordValid(edit_text_login_userpass.text)) {
                 edit_text_login_userpass.error = null
             }
             false
         }
-
         return view
     }
 

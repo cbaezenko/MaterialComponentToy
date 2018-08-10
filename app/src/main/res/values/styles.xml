@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Shrine" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -10,9 +10,9 @@
         <item name="colorControlActivated">@color/colorControlActivated</item>
     </style>
 
-    <style name="Widget.AppTheme.Toolbar" parent="Widget.AppCompat.Toolbar">
+    <style name="Widget.Shrine.Toolbar" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">?attr/colorAccent</item>
-        <item name="android:theme">@style/Theme.AppTheme</item>
+        <item name="android:theme">@style/Theme.Shrine</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
         <item name="titleTextAppearance">@style/TextAppearance.Shrine.Toolbar</item>
     </style>
@@ -47,10 +47,14 @@
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
 
+    <style name="Widget.Shrine.Backdrop" parent="">
+        <item name="android:background">?attr/colorAccent</item>
+    </style>
+
 
 
     <!--Dark Style-->
-    <style name="Theme.AppTheme.Dark">
+    <style name="Theme.Shrine.Dark">
         <item name="colorPrimaryDark">#27272F</item>
         <item name="colorAccent">#33333D</item>
         <item name="colorControlActivated">#FFCF44</item>

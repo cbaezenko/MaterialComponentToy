@@ -1,4 +1,4 @@
-package com.example.baeza.materialcomponentstoy
+package com.example.baeza.materialcomponentstoy.helper
 
 import android.graphics.*
 import com.squareup.picasso.Transformation
